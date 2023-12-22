@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=IBM+Plex+Sans:ital,wght@1,100&family=Libre+Baskerville:ital@0;1&family=Poppins:wght@500&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Caveat', cursive;;
+}
+body{
+    background-color: #0766AD;
+}
+
+.quote-box{
+    background-color: #C5E898;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px;
+
+}
+
+.quote-box h1{
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.quote-box h1::after {
+    content: ' ';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #29ADB2;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50px);
+}
+
+.quote-box blockquote{
+    font-size: 26px;
+    min-height: 110px;
+}
+
+.quote-box blockquote::before, .quote-box blockquote::after{
+    content: '"';
+}
+
+.quote-box span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+.quote-box span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: #29ADB2;
+    top: 50%;
+    left: -30px;
+}
+
+.quote-box div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.quote-box button{
+    background-color:#29ADB2 ;
+    border-radius: 25px;
+    border: 1px solid;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.quote-box button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.quote-box button:nth-child(2){
+    background-color: transparent;
+}
